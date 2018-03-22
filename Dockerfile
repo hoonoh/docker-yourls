@@ -1,5 +1,4 @@
 FROM mitcdh/caddy-php
-MAINTAINER Mitchell Hewes <me@mitcdh.com>
 
 RUN apk --update add \
     php7-pdo_mysql && \

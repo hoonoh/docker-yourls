@@ -58,6 +58,13 @@ else
         echo "found YOURL_PASSWORD"
     fi
     
+    if [ -z "$YOURLS_URL_CONVERT" ]; then
+        echo "no YOURLS_URL_CONVERT found -> default is 36"
+        YOURLS_URL_CONVERT="36"
+    else
+        echo "found YOURLS_URL_CONVERT"
+    fi
+    
     if [ -z "$YOURLS_SITE" ]; then
         echo "no YOURLS_SITE name detected -> EXIT"
         exit 1
@@ -81,7 +88,7 @@ define( 'YOURLS_PRIVATE', true );
         '$YOURL_USER' => '$YOURL_PASSWORD',
         );
 define( 'YOURLS_DEBUG', false );
-define( 'YOURLS_URL_CONVERT', 36 );
+define( 'YOURLS_URL_CONVERT', '$YOURLS_URL_CONVERT' );
 \$yourls_reserved_URL = array(
         'reserved',
 );

@@ -6,6 +6,7 @@
 * `YOURLS_SITE`='http://domain.tld'
 * `YOURL_USER`='admin'
 * `YOURL_PASSWORD`='mysecretpassword'
+* `YOURLS_URL_CONVERT`='36'
 * `DB_PREFIX`='yourls_'
 * `DB_HOST`='mysql01.yourls.tld'
 * `DB_USER`='yourls'
@@ -35,4 +36,5 @@ mitcdh/yourls
 * `2015`: http web server
 
 ### Credits
+* [mitcdh/yourls](https://hub.docker.com/r/mitcdh/yourls/)
 * [bios/docker-yourls](https://hub.docker.com/r/bios/docker-yourls/)
